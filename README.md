@@ -1,2 +1,3 @@
-# saenggye-apps
-streamlit-app
+streamlit
+numpy
+pandas
