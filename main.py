@@ -7,3 +7,8 @@ def main():
     st.subheader('정보관리계에서 테스트 중입니다~~')
 if __name__ == '__main__' :
     main()
+
+
+ if st.button("click button"):
+      st.write("Data Loading..")
+      # 데이터 로딩 함수는 여기에!
