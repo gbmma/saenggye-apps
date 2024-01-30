@@ -1,29 +1,11 @@
- 
+import streamlit as st
 
-'''
-Automated Student self-Diagnosis, ASD
-Copyright (c)2020 TAO
-All rights reserved.
-'''
-#-* utf-8 *-
-#한글 텍스트 파일 읽어오기
-import automated
-f=open("automated_jagajindan_stu_data.txt",'r',encoding='utf-8')
-lines = f.readlines()
+# 웹에서 텍스트 표시
+def main():
+    st.title('경기북부병무지청') 
+    st.header('생계심사 자가진단')
+    st.subheader('정보관리계에서 테스트 중입니다~~')
+  
 
-i=0
-for line in lines:
-    if(i==0 or i==1):
-        i+=1
-        continue
-    if(i%2==0):
-        name=line            #이름
-        print(name,end='')
-    else:
-        bit=line            #생년월일
-        print(bit,end='')
-        automated.jindan(name, bit)
-    i+=1
-
-f.close()
- 
+if __name__ == '__main__' :
+    main()
