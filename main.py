@@ -6,9 +6,7 @@ def main():
     st.header('생계심사 자가진단')
     st.subheader('정보관리계에서 테스트 중입니다~~')
 
- if st.button("click button"):
-      st.write("Data Loading..")
-
+ if st.button("click button"): 
 
 if __name__ == '__main__' :
     main()
