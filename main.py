@@ -5,10 +5,12 @@ def main():
     st.title('경기북부병무지청') 
     st.header('생계심사 자가진단')
     st.subheader('정보관리계에서 테스트 중입니다~~')
-if __name__ == '__main__' :
-    main()
-
 
  if st.button("click button"):
       st.write("Data Loading..")
-      # 데이터 로딩 함수는 여기에!
+
+
+if __name__ == '__main__' :
+    main()
+
+ 
