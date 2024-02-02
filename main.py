@@ -1,16 +1,12 @@
 import streamlit as st
-import pandas as pd
-import snowflake.connector
-import streamlit_option_menu
-from streamlit_option_menu import option_menu
 
+# 웹에서 텍스트 표시
+def main():
+    st.title('경기북부병무지청') 
+    st.header('생계심사 자가진단')
+    st.subheader('정보관리계에서 테스트 중입니다')
+  
 
-with st.sidebar:
-  selected = option_menu(
-    menu_title = "Main Menu",
-    options = ["Home","Projects","Contact"],
-    icons = ["house","book","envelope"],
-    menu_icon = "cast",
-    default_index = 0,
+if __name__ == '__main__' :
+    main()
 
-  )
