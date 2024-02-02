@@ -17,3 +17,4 @@ st.markdown(
 
 """
 )
+def openai_create(prompt):
