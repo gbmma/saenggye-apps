@@ -17,4 +17,9 @@ st.markdown(
 
 """
 )
-        
+
+st.set_page_config(
+    page_title="Diagnosis_Assistant",
+    page_icon="🏥",
+    layout="wide"
+)
