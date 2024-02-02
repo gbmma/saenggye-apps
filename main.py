@@ -8,7 +8,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-st.write("# 경기북부병무지청 생계심사 자가진단")
+st.write("# 경기북부병무지청 생계 자가진단")
 
 st.sidebar.success("Select a demo above.")
 
