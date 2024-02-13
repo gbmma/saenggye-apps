@@ -1,7 +1,7 @@
 import streamlit as st
 st.sidebar.title("병무청 생계곤란사유 병역감면원이란?")
 select_species = st.sidebar.selectbox(
-    '✔️확인하고 싶은 사항을 선택하세요',
+    '🔎확인하고 싶은 사항을 선택하세요',
     ['📝자가진단하기','📖제도 개요']
 )
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     health_status = st.selectbox("건강 상태를 선택하세요", ["건강함", "질병/장해 있음"]) 
 
     # ""결과 확인하기" 버튼을 생성합니다.
-    if st.button("결과 확인하기"):
+    if st.button("✔️결과 확인하기"):
         result = military_exemption_diagnosis(income, family_members, health_status, military_service)
         st.subheader("생계곤란사유 병역감면 진단 결과:")
         st.write(result)
