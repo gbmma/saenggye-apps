@@ -39,4 +39,4 @@ if __name__ == '__main__':
     if selected_page == "📝자가진단하기":
         self_diagnosis_page() 
     elif selected_page == "📖제도 개요":
-        st.title("📝자가진단하기")
+        st.title("📖제도 개요")
