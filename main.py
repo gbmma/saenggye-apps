@@ -8,7 +8,7 @@ st.set_page_config(
 
 st.write("# 경기북부병무지청 생계 자가진단")
 
-st.sidebar.success("여긴")
+st.sidebar.success("여ㅇ긴")
 
 st.markdown(
     """##### 테스트중!
