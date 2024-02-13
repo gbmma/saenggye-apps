@@ -1,9 +1,9 @@
 import streamlit as st
 
-st.sidebar.title('🌸생계심사 자가진단 테스트🌸')
+st.sidebar.title('🌸생계유지곤란사유 병역감면원🌸')
 select_species = st.sidebar.selectbox(
-    '확인하고 싶은 종을 선택하세요',
-    ['setosa','versicolor','virginica']
+    '확인하고 싶은 사항을 선택하세요',
+    ['자가진단 참고사항','병역감면 제도 개요','자가진단 시작하기']
 )
 
 st.set_page_config(
