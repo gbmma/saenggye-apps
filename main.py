@@ -1,5 +1,5 @@
 import streamlit as st
-
+st.sidebar.title("사이드바 제목")
 def military_exemption_diagnosis(income, family_members, health_status, military_service):
     # 생계곤란사유 병역감면 진단 로직을 수행합니다.
     income_criteria = income < 3000000  # 가계 소득이 3,000,000원 미만인 경우
