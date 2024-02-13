@@ -1,7 +1,19 @@
 import streamlit as st
 from streamlit.components.v1 import html
+import streamlit as st 
+from streamlit.components.v1 import html
+from streamlit_extras.buy_me_a_coffee import button
 
+import os
 import json
+
+import openai
+
+path = os.path.dirname(__file__)
+
+# Load translations from JSON file
+with open(path+"/../main/translations.json") as f:
+    transl = json.load(f) 
  
 st.set_page_config(
     page_title="경기북부병무지청 생계심사 자가진단",
