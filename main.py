@@ -1,5 +1,10 @@
 import streamlit as st
-st.sidebar.title("사이드바 제목")
+st.sidebar.title("생계곤란사유 병역감면원이란?")
+select_species = st.sidebar.selectbox(
+    '확인하고 사항을 선택하세요',
+    ['제도 개요','자가진단하기']
+)
+
 def military_exemption_diagnosis(income, family_members, health_status, military_service):
     # 생계곤란사유 병역감면 진단 로직을 수행합니다.
     income_criteria = income < 3000000  # 가계 소득이 3,000,000원 미만인 경우
