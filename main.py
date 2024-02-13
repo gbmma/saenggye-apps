@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-
+"page1_title": "Diagnosis Assistant" 
 st.set_page_config(
     page_title="경기북부병무지청 생계심사 자가진단",
     page_icon=":pickup_truck:",
@@ -16,6 +16,4 @@ st.markdown(
     """##### 테스트중!
 
 """
-) 
-
-  "page1_title": "Diagnosis Assistant" 
+)  
