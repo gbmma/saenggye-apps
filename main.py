@@ -19,5 +19,5 @@ def corona_self_diagnosis():
 
 # Streamlit 앱 실행
 if __name__ == '__main__':
-    st.title("코로나 자가진단 앱")
+    st.title("생계유지곤란사유 병역감면 자가진단")
     corona_self_diagnosis()
