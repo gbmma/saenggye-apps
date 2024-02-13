@@ -37,6 +37,6 @@ if __name__ == '__main__':
 
     # 선택된 페이지에 따라 내용 출력
     if selected_page == "📝자가진단하기":
-        st.title("📝자가진단하기")
+        self_diagnosis_page() 
     elif selected_page == "📖제도 개요":
-        self_diagnosis_page()
+        st.title("📝자가진단하기")
