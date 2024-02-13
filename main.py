@@ -8,7 +8,7 @@ import openai
 path = os.path.dirname(__file__)
 
 # Load translations from JSON file
-with open(path+"/../main/translations.json") as f:
+with open(path+"/../translations.json") as f:
     transl = json.load(f) 
  
 st.set_page_config(
