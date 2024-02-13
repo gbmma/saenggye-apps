@@ -29,6 +29,20 @@ def military_exemption_diagnosis(income, family_members, health_status, military
     else:
         return "현재 조건으로는 병역감면이 어려울 수 있습니다."
 
+def home_page():
+    st.title("병역감면 자가진단 시스템")
+
+    st.write("병역감면 자가진단 시스템에 오신 것을 환영합니다! 이 시스템을 통해 생계곤란사유를 기반으로 한 병역감면 여부를 진단할 수 있습니다.")
+    
+    st.header("병역감면 제도란?")
+    st.write("병역감면은 군 복무를 하지 않거나 대체복무를 수행할 수 있는 국민에게 부과되는 공무원 및 국민연금납부의무가 해제되는 혜택입니다.")
+    
+    st.header("자가진단 방법")
+    st.write("1. 왼쪽의 사이드바에서 '자가진단하기'를 선택합니다.")
+    st.write("2. 나타난 페이지에서 가계 소득, 가족 수, 건강 상태, 군 복무 경력 등을 입력합니다.")
+    st.write("3. '결과 보기' 버튼을 클릭하여 병역감면 여부를 확인합니다.")
+    
+
 # Streamlit 앱 실행
 if __name__ == '__main__':
     st.sidebar.title("경기북부병무청 생계심사")
@@ -39,4 +53,4 @@ if __name__ == '__main__':
     if selected_page == "📝자가진단하기":
         self_diagnosis_page() 
     elif selected_page == "📖제도 개요":
-        st.title("📖제도 개요")
+        home_page()
