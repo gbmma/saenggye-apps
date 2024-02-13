@@ -36,7 +36,7 @@ if __name__ == '__main__':
     selected_page = st.sidebar.selectbox("🔎확인하고 싶은 사항을 선택하세요", page_options)
 
     # 선택된 페이지에 따라 내용 출력
-    if selected_page == "홈":
-        st.title("홈 페이지")
-    elif selected_page == "자가진단하기":
+    if selected_page == "📖제도 개요":
+        st.title("📖제도 개요")
+    elif selected_page == "📝자가진단하기":
         self_diagnosis_page()
