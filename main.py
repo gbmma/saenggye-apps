@@ -9,7 +9,7 @@ def military_exemption_diagnosis(income, family_members, health_status, military
 
     # 결과를 반환합니다.
     if income_criteria or family_criteria or health_criteria or military_criteria:
-        return "생계곤란사유로 병역감면이 가능할 수 있습니다."
+        return "생계곤란사유로 병역감면이 가능할 수 있습니다. 자세한 사항은 담당자에게 문의 바랍니다."
     else:
         return "현재 조건으로는 병역감면이 어려울 수 있습니다."
 
@@ -23,8 +23,8 @@ if __name__ == '__main__':
     health_status = st.selectbox("건강 상태를 선택하세요", ["건강함", "질병/장해 있음"])
     military_service = st.selectbox("군 복무 경력이 있습니까?", ["없음", "있음"])
 
-    # "결과 보기" 버튼을 생성합니다.
-    if st.button("결과 보기"):
+    # ""결과 확인하기" 버튼을 생성합니다.
+    if st.button("결과 확인하기"):
         result = military_exemption_diagnosis(income, family_members, health_status, military_service)
         st.subheader("생계곤란사유 병역감면 진단 결과:")
         st.write(result)
