@@ -20,7 +20,7 @@ def military_exemption_diagnosis(income, family_members, health_status, military
 
 # Streamlit 앱 실행
 if __name__ == '__main__':
-    st.title("생계곤란사유 병역감면 진단")
+    st.title("생계곤란사유 병역감면 자가진단")
 
     # 사용자로부터 다양한 정보를 입력받습니다.
     age = st.slider("나이를 입력하세요", min_value=18, max_value=40, value=20)
