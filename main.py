@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+  page_icon="✏️",
+  page_title="경기북부청 생계감면 진단",
+)
+
 def self_diagnosis_page():
     st.title("생계곤란사유 병역감면 자가진단")
 
