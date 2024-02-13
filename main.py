@@ -1,7 +1,7 @@
 import streamlit as st
 
 def military_exemption_diagnosis():
-    st.title("복잡한 병역감면 진단")
+    st.title("병역감면 진단")
 
     # 사용자로부터 다양한 정보를 입력받습니다.
     age = st.slider("나이를 입력하세요", min_value=18, max_value=40, value=20)
