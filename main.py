@@ -12,6 +12,7 @@ def self_diagnosis_page():
     age = st.slider("나이를 입력하세요", min_value=18, max_value=40, value=20)
     military_service = st.selectbox("군 복무 경력이 있습니까?", ["없음", "있음"])
     income = st.number_input("가계 소득을 입력하세요 (원)", min_value=0, step=1000000, value=0)
+    property = st.number_input("재산 금액을 입력하세요 (원)", min_value=0, step=1000000, value=0)
     family_members = st.slider("가족 수를 입력하세요", min_value=1, max_value=10, value=1)
     health_status = st.selectbox("건강 상태를 선택하세요", ["건강함", "질병/장해 있음"]) 
 
@@ -24,6 +25,7 @@ def self_diagnosis_page():
 def military_exemption_diagnosis(income, family_members, health_status, military_service):
     # 생계곤란사유 병역감면 진단 로직을 수행합니다.
     income_criteria = income < 3000000  # 가계 소득이 3,000,000원 미만인 경우
+    property_criteria = income < 10000000  # 재산 금액이 10,000,000원 미만인 경우
     family_criteria = family_members <= 4  # 가족 수가 4명 이하인 경우
     health_criteria = health_status == "질병/장해 있음"  # 건강 상태가 질병/장해 있는 경우
     military_criteria = military_service == "있음"  # 군 복무 경력이 있는 경우
