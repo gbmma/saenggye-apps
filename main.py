@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
   page_icon="✅",
-  page_title="경기북부청 생계감면 진단",
+  page_title="경기북부청 생계감면 진단~",
 )
 
 def self_diagnosis_page():
