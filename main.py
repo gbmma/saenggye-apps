@@ -9,7 +9,7 @@ def self_diagnosis_page():
     st.title("생계곤란사유 병역감면 자가진단")
 
     # 사용자로부터 다양한 정보를 입력받습니다.
-    age = st.slider("나이를 입력하세요", min_value=18, max_value=40, value=20)
+    age = st.slider("나이를 입력하세dydy", min_value=18, max_value=40, value=20)
     military_service = st.selectbox("군 복무 경력이 있습니까?", ["없음", "있음"])
     income = st.number_input("가계 소득을 입력하세요 (원)", min_value=0, step=1000000, value=0)
     property = st.number_input("재산 금액을 입력하세요 (원)", min_value=0, step=1000000, value=0)
