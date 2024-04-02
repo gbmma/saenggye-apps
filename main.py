@@ -52,7 +52,7 @@ def home_page():
 link_url = "https://blog.naver.com/mma9090/223372410453"
 
 # 바로가기 버튼 생성
-if st.button("병무청 블로그 바로가기",  bg_color=red_color):
+if st.button("병무청 블로그 바로가기",bg_color=red_color):
     # 버튼 클릭 시 해당 링크로 이동
     st.markdown(f"[생계유지 곤란사유 병역감면 개선사항, 한눈에 알아보아요!]({link_url})")
    
