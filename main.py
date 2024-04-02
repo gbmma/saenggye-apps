@@ -37,7 +37,7 @@ def military_exemption_diagnosis(income, family_members, health_status, military
         return "현재 조건으로는 병역감면이 어려울 수 있습니다."
 
 def home_page():
-    st.title("병역감면 자가진단 시스템")
+    st.title("경기북부 병무청 병역감면 자가진단 시스템")
 
     st.write("병역감면 자가진단 시스템에 오신 것을 환영합니다!\n이 시스템을 통해 생계곤란사유를 기반으로 한 병역감면 여부를 진단할 수 있습니다. 상세한 심사는 담당자에게 문의하시기 바랍니다.")
     
