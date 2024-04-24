@@ -60,7 +60,7 @@ if st.button("병무청 블로그 바로가기"):
 
 # Streamlit 앱 실행
 if __name__ == '__main__':
-    st.sidebar.title("경기북부병무청 생계심사")
+    st.sidebar.title("경기북부병무청 고객지원과")
     page_options = ["📝자가진단하기","📖안내 사항"]
     selected_page = st.sidebar.selectbox("🔎확인하고 싶은 사항을 선택하세요", page_options)
 
