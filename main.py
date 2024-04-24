@@ -49,6 +49,7 @@ def home_page():
     st.write("2. 나타난 페이지에서 가계 소득, 가족 수, 건강 상태, 군 복무 경력 등을 입력합니다.")
     st.write("3. '결과 확인하기' 버튼을 클릭하여 병역감면 여부를 확인합니다.")
   
+import webbrowser
 
 def open_link():
     # 여기에 설정된 링크를 입력하세요.
