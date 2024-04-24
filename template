@@ -1,1 +1,44 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스트림릿 생계 진단</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>생계 진단</h1>
+    <button onclick="startDiagnosis()">시작하기</button>
+
+    <script>
+        function startDiagnosis() {
+            // 시작하기 버튼을 눌렀을 때의 동작을 정의하세요.
+            alert('생계 진단을 시작합니다.');
+            // 예를 들어, 다음은 새로운 페이지로 이동하는 코드입니다.
+            // window.location.href = '/diagnosis';
+        }
+    </script>
+</body>
+</html>
