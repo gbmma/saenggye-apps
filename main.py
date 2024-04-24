@@ -49,14 +49,15 @@ def home_page():
     st.write("2. 나타난 페이지에서 가계 소득, 가족 수, 건강 상태, 군 복무 경력 등을 입력합니다.")
     st.write("3. '결과 확인하기' 버튼을 클릭하여 병역감면 여부를 확인합니다.")
   
-link_url = "https://blog.naver.com/mma9090/223372410453"
 
-# 바로가기 버튼 생성
-if st.button("병무청 블로그 바로가기"):
-    # 버튼 클릭 시 해당 링크로 이동
-    st.markdown(f"[생계유지 곤란사유 병역감면 개선사항, 한눈에 알아보아요!]({link_url})")
-   
-    
+def open_link():
+    # 여기에 설정된 링크를 입력하세요.
+    target_link = 'https://blog.naver.com/mma9090/223372410453'
+    webbrowser.open(target_link)
+
+if __name__ == '__main__':
+    open_link()
+  
 
 # Streamlit 앱 실행
 if __name__ == '__main__':
